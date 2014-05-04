@@ -1,0 +1,22 @@
+apply plugin: 'java'
+
+ext {
+    installRoot = "$projectDir/installRoot"
+    parentRoot = "$projectDir/network/service"
+
+    frameworksDir = "Frameworks"
+    applicationsDir = "Apps"
+
+    moduleName = 'root'
+    moduleType = 'container'
+}
+
+subprojects {
+    apply plugin: 'java'
+}
+
+def getInstallRootDir(project) {
+    def subroot =  (project.moduleType == 'appication') ? applicationsDir : frameworksDir
+
+    return "$installRoot/${subroot}/${project.moduleName}.${project.moduleType}"
+}

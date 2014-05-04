@@ -1,0 +1,17 @@
+
+moduleName = 'bar'
+moduleType = 'framework'
+
+sourceSets {
+    main {
+        java.srcDir "$parentRoot/fnord/network/service/common/bar"
+    }
+}
+
+jar {
+    destinationDir = file(getInstallRootDir(project))
+}
+
+clean.doFirst {
+    delete.add(getInstallRootDir(project))
+}

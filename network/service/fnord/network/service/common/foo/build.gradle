@@ -1,0 +1,21 @@
+
+moduleName = 'foo'
+moduleType = 'framework'
+
+sourceSets {
+    main {
+        java.srcDir "$parentRoot/fnord/network/service/common/foo"
+    }
+}
+
+dependencies {
+    compile project(":charly")
+}
+
+jar {
+    destinationDir = file(getInstallRootDir(project))
+}
+
+clean.doFirst {
+    delete.add(getInstallRootDir(project))
+}

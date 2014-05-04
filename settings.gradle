@@ -1,0 +1,5 @@
+include "foo", "bar", "charly"
+
+project(":bar").projectDir = file("$settingsDir/network/service/fnord/network/service/common/bar")
+project(":foo").projectDir = file("$settingsDir/network/service/fnord/network/service/common/foo")
+project(":charly").projectDir = file("$settingsDir/network/service/fnord/network/service/common/charly")

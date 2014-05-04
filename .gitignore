@@ -1,0 +1,18 @@
+## Gradle default build folder
+.gradle/
+build/
+installRoot/
+
+## IntelliJ directory-based project format
+.idea/
+
+## IntelliJ file-based project format
+*.ipr
+*.iws
+*.iml
+
+## Eclipse specific files
+.classpath
+.project
+.settings/
+
