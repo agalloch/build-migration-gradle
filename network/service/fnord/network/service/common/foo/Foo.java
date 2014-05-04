@@ -1,6 +1,6 @@
-package ariba.network.service.common.foo;
+package fnord.network.service.common.foo;
 
-import ariba.network.service.common.charly.Charly;
+import fnord.network.service.common.charly.Charly;
 
 public abstract class Foo {
     private String fooName;

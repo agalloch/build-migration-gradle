@@ -1,4 +1,4 @@
-package ariba.network.service.common.bar;
+package fnord.network.service.common.bar;
 
 public class Bar {
     private String barName;

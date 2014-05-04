@@ -1,4 +1,4 @@
-package ariba.network.service.common.charly;
+package fnord.network.service.common.charly;
 
 public class Charly {
     private final String charlyName = "alpha-bravo-delta";
